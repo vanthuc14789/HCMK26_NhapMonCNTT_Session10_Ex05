@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+<title id="title">Sơ đồ hệ thống Smart-Farm</title>
+<desc id="desc">Cảm biến nhiệt độ và độ ẩm gửi dữ liệu đến bộ điều khiển SoC. Bộ điều khiển điều khiển relay để bật hoặc tắt máy bơm. Dữ liệu có thể được gửi đến giao diện giám sát.</desc>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#456b91"/></marker>
+  <style>
+    .node{stroke:#35648c;stroke-width:2;rx:18;ry:18}
+    .label{font:700 22px Arial,sans-serif;fill:#17324d;text-anchor:middle}
+    .sub{font:16px Arial,sans-serif;fill:#234760;text-anchor:middle}
+    .arrow{stroke:#456b91;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="1200" height="440" rx="18" fill="#f7fbff"/>
+<text x="600" y="42" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#17324d" text-anchor="middle">Sơ đồ phối hợp phần cứng Smart-Farm</text>
+<rect class="node" x="35" y="125" width="225" height="155" fill="#dceeff"/>
+<text class="label" x="147" y="165">Cảm biến IoT</text>
+<text class="sub" x="147" y="202">Nhiệt độ</text>
+<text class="sub" x="147" y="230">Độ ẩm đất</text>
+<text class="sub" x="147" y="258">Dữ liệu môi trường</text>
+<path class="arrow" d="M260 202 H330"/>
+<text class="sub" x="295" y="184">Dữ liệu</text>
+<rect class="node" x="335" y="105" width="260" height="195" fill="#dff5e7"/>
+<text class="label" x="465" y="148">Bộ điều khiển / SoC</text>
+<text class="sub" x="465" y="190">CPU xử lý chương trình</text>
+<text class="sub" x="465" y="220">RAM: dữ liệu tạm</text>
+<text class="sub" x="465" y="250">Áp dụng ngưỡng tưới</text>
+<path class="arrow" d="M595 202 H675"/>
+<text class="sub" x="635" y="184">Lệnh</text>
+<rect class="node" x="680" y="125" width="190" height="155" fill="#fff0d7"/>
+<text class="label" x="775" y="170">Mạch relay</text>
+<text class="sub" x="775" y="207">Đóng/ngắt tải</text>
+<text class="sub" x="775" y="238">Theo định mức</text>
+<path class="arrow" d="M870 202 H940"/>
+<rect class="node" x="945" y="125" width="220" height="155" fill="#e5e6ff"/>
+<text class="label" x="1055" y="170">Máy bơm nước</text>
+<text class="sub" x="1055" y="207">Tưới cho hoa Lan</text>
+<text class="sub" x="1055" y="238">Bật/tắt an toàn</text>
+<rect class="node" x="355" y="335" width="220" height="70" fill="#ffffff"/>
+<text class="label" x="465" y="365">Web / Ứng dụng</text>
+<text class="sub" x="465" y="389">Giám sát trạng thái</text>
+<path class="arrow" d="M465 300 V330"/>
+<text class="sub" x="610" y="355">Gửi dữ liệu qua Wi-Fi/LAN (nếu có)</text>
+</svg>
